@@ -1,3 +1,4 @@
+/*jshint esversion: 6 */
 const siteContent = {
   "nav": {
     "nav-item-1": "Services",
@@ -39,4 +40,14 @@ const siteContent = {
 
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
-logo.setAttribute('src', siteContent["nav"]["img-src"])
+logo.setAttribute('src', siteContent["nav"]["img-src"]);
+
+//Create selectors
+let nav = document.querySelectorAll('a');
+nav.forEach(element => {
+
+});
+
+//h1
+let headerOne = document.querySelector('h1');
+headerOne.textContent = siteContent.cta.h1;
