@@ -135,3 +135,21 @@ cFour.textContent = siteContent["contact"]["email"];
 //footer
 let footer = document.querySelector("footer > p");
 footer.textContent = "Copyright Great Idea! 2019";
+
+//add two new items to nav
+
+const newNavOne = document.createElement('a');
+newNavOne.textContent = "New A Tag";
+const parentElement = document.querySelector('nav');
+parentElement.append(newNavOne);
+
+const newNavTwo = document.createElement('a');
+newNavTwo.textContent = "New Tag Number Two";
+const parentElementTwo = document.querySelector('nav');
+parentElementTwo.append(newNavTwo);
+
+//change nav text to green
+const navColor = document.querySelectorAll('a');
+navColor.forEach(element => {
+  element.style.color = "green";
+});
