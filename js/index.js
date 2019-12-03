@@ -113,3 +113,7 @@ cOne.textContent = siteContent["contact"]["contact-h4"];
 cTwo.textContent = siteContent["contact"]["address"];
 cThree.textContent = siteContent["contact"]["phone"];
 cFour.textContent = siteContent["contact"]["email"];
+
+//footer
+let footer = document.querySelector("footer > p");
+footer.textContent = "Copyright Great Idea! 2019";
