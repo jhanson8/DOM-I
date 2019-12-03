@@ -45,10 +45,28 @@ logo.setAttribute('src', siteContent["nav"]["img-src"]);
 //Create selectors
 
 //nav
-let nav = document.querySelectorAll('a');
-nav.forEach(element => {
+let nav = document.querySelector('a:nth-of-type(1)');
+nav.textContent = siteContent["nav"]["nav-item-1"];
 
-});
+let two = document.querySelector('a:nth-of-type(2)');
+two.textContent = siteContent["nav"]["nav-item-2"];
+
+
+let navThree = document.querySelector('a:nth-of-type(3)');
+navThree.textContent = siteContent["nav"]["nav-item-3"];
+
+let navFour = document.querySelector('a:nth-of-type(4)');
+navFour.textContent = siteContent["nav"]["nav-item-4"];
+
+let navFive = document.querySelector('a:nth-of-type(5)');
+navFive.textContent = siteContent["nav"]["nav-item-5"];
+
+let navSix = document.querySelector('a:nth-of-type(6)');
+navSix.textContent = siteContent["nav"]["nav-item-6"];
+
+// nav.forEach(element => {
+//
+// });
 
 //h1
 let headerOne = document.querySelector('h1');
