@@ -43,6 +43,8 @@ let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"]);
 
 //Create selectors
+
+//nav
 let nav = document.querySelectorAll('a');
 nav.forEach(element => {
 
@@ -51,3 +53,63 @@ nav.forEach(element => {
 //h1
 let headerOne = document.querySelector('h1');
 headerOne.textContent = siteContent.cta.h1;
+
+//cta image
+let ctaImage = document.getElementById("cta-img");
+ctaImage.setAttribute('src', siteContent["cta"]["img-src"]);
+
+//button
+let button = document.querySelector('button');
+button.textContent = siteContent.cta.button;
+
+//features
+let fOne = document.querySelector(".text-content > h4");
+fOne.textContent = siteContent["main-content"]["features-h4"];
+
+let fTwo = document.querySelector(".text-content > p");
+fTwo.textContent = siteContent["main-content"]["features-content"];
+
+//About
+let aboutOne = document.querySelector(".top-content div:nth-child(2) > h4");
+aboutOne.textContent = siteContent["main-content"]["about-h4"];
+
+let aboutTwo = document.querySelector(".top-content div:nth-child(2) > p");
+aboutTwo.textContent = siteContent["main-content"]["about-content"];
+
+//middle image
+let middleImage = document.getElementById("middle-img");
+middleImage.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
+
+//services
+let servicesOne = document.querySelector(".bottom-content div:nth-child(1) > h4");
+servicesOne.textContent = siteContent["main-content"]["services-h4"];
+
+let servicesTwo = document.querySelector(".bottom-content div:nth-child(1) > p");
+servicesTwo.textContent = siteContent["main-content"]["services-content"];
+
+//product
+
+let productOne = document.querySelector(".bottom-content div:nth-child(2) > h4");
+productOne.textContent = siteContent["main-content"]["product-h4"];
+
+let productTwo = document.querySelector(".bottom-content div:nth-child(2) > p");
+productTwo.textContent = siteContent["main-content"]["product-content"];
+
+//vision
+let visionOne = document.querySelector(".bottom-content div:nth-child(3) > h4");
+visionOne.textContent = siteContent["main-content"]["vision-h4"];
+
+let visionTwo = document.querySelector(".bottom-content div:nth-child(3) > p");
+visionTwo.textContent = siteContent["main-content"]["vision-content"];
+
+//Contact
+let cOne = document.querySelector(".contact > h4");
+let cTwo = document.querySelector(".contact > p:nth-child(2)");
+let cThree = document.querySelector(".contact > p:nth-child(3)");
+let cFour= document.querySelector(".contact > p:nth-child(4)");
+
+
+cOne.textContent = siteContent["contact"]["contact-h4"];
+cTwo.textContent = siteContent["contact"]["address"];
+cThree.textContent = siteContent["contact"]["phone"];
+cFour.textContent = siteContent["contact"]["email"];
